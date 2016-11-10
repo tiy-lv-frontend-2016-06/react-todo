@@ -17,11 +17,7 @@ const stateToProps = (state, ownProps) => {
   if (ownProps.filter) {
     return {
       todos: state.todoReducer.todos.filter(todo => {
-        if (ownProps.filter === 'all') {
-          return true;
-        } else {
-          return todo.status === ownProps.filter
-        }
+        return todo.status === ownProps.filter
       })
     }
   } else {

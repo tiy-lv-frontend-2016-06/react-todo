@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import store from 'store';
 import { Provider } from 'react-redux';
 
@@ -13,11 +13,12 @@ injectTapEventPlugin();
 
 // UI
 import Todos from 'ui/todos';
+import Asdf from 'ui/Asdf.js';
 
 const Site = (
   <MuiThemeProvider>
     <Provider store={store}>
-      <Router history={hashHistory}>
+      <Router history={browserHistory}>
         <Route path="/(:filter)" component={Todos} />
       </Router>
     </Provider>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { markComplete, deleteItem } from 'api/todo';
+import { toggleComplete, deleteItem } from 'api/todo';
 import ContentDelete from 'material-ui/svg-icons/action/delete'
 import { TableRow, TableRowColumn } from 'material-ui/Table';
 import { ListItem } from 'material-ui/List';
@@ -22,15 +22,15 @@ export default React.createClass({
       </IconButton>
     )
   },
-  markComplete: function (e) {
-    markComplete(this.props.id);
+  toggleComplete: function (e) {
+    toggleComplete(this.props.id);
   },
   deleteItem: function (e) {
     deleteItem(this.props.id);
   },
   render: function () {
     return (
-      <ListItem primaryText={this.primaryText()} onTouchTap={this.markComplete} rightIconButton={this.iconButton()} />
+      <ListItem primaryText={this.primaryText()} onTouchTap={this.toggleComplete} rightIconButton={this.iconButton()} />
     )
   }
 });

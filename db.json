@@ -1,29 +1,14 @@
 {
   "todos": [
     {
-      "id": "e62634cb-62f0-4c83-8af1-17f4f3af0098",
+      "id": "6cbc6953-7da5-49bb-a044-487c537d1d3e",
       "text": "asdf",
-      "status": "active"
+      "status": "complete"
     },
     {
-      "id": "897715a1-a527-40c0-a4b6-f74046c99681",
-      "text": "asdf",
-      "status": "active"
-    },
-    {
-      "id": "aa66ce91-d759-4163-ab26-0c7609764de5",
-      "text": "asdf",
-      "status": "active"
-    },
-    {
-      "id": "ef3095ec-996b-49ee-b90a-405865d1657c",
-      "text": "asdf",
-      "status": "active"
-    },
-    {
-      "id": "bda85ee5-9e18-4119-b472-c5396c00f2ab",
-      "text": "qwer",
-      "status": "active"
+      "id": "0a035afa-ca9f-421a-b912-30a9589964db",
+      "text": "asdfasdfa",
+      "status": "complete"
     }
   ]
 }

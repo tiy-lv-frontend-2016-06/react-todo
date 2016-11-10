@@ -10,12 +10,12 @@ export default function(state = todoInitialState, action) {
     case 'ADD_TODO':
       return {...state, todos:[...state.todos, action.todo]}
 
-    case 'MARK_COMPLETE':
+    case 'TOGGLE_COMPLETE':
       return {...state, todos:state.todos.map(todo => {
         if (todo.id === action.id) {
           return {
             id: todo.id,
-            status: todo.status === 'complete' ? 'active' : 'complete',
+            status: action.status,
             text: todo.text
           }
         } else {

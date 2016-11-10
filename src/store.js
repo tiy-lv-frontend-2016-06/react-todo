@@ -11,6 +11,6 @@ const reducers = combineReducers({
 })
 
 // crerate the store with localStorage
-//export default createStore(reducers, getState());
+// export default createStore(reducers, getState());
 
 export default createStore(reducers);

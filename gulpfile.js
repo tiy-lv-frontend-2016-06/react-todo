@@ -1,8 +1,9 @@
 var gulp = require('gulp');
 var webpack = require('webpack-stream');
-var serve = require('gulp-serve');
+//var serve = require('gulp-serve');
 var config = require('config');
 var jsonServer = require('json-server');
+var serve = require('./app');
 
 // Webpack
 gulp.task('webpack', function () {

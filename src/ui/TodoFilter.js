@@ -5,17 +5,17 @@ import FlatButton from 'material-ui/FlatButton';
 import { connect } from 'react-redux';
 import { changeFilter, deleteCompleted } from 'api/todo';
 import { Link } from 'react-router';
-import { hashHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 
 const Filter = React.createClass({
   goToHome: function () {
-    hashHistory.push('/')
+    browserHistory.push('/')
   },
   goToActive: function () {
-    hashHistory.push('/active')
+    browserHistory.push('/active')
   },
   goToComplete: function () {
-    hashHistory.push('/complete')
+    browserHistory.push('/complete')
   },
   render: function () {
     return (
